@@ -9,7 +9,7 @@ Kotlin Updates
 
 https://kotlinlang.org/
 
-![]()
+![Kotlin Website](https://raw.githubusercontent.com/eyasuyuki/KotlinUpdates/master/images/kotlinlang_org.png)
 
 # Kotlinとは(2/2)
 
