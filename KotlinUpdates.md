@@ -41,7 +41,7 @@ https://kotlinlang.org/
 
 # 1.0から1.3までの大きなトピック
 
-- マルチプラットフォーム化
+- マルチプラットフォーム対応
 - コルーチン
 - 契約(Contracts)
 
@@ -55,14 +55,14 @@ https://kotlinlang.org/
 - Kotlin/Nativeのリリースでネイティブコンパイルが可能になりJavaに依存しない道が開かれた
 - 適用分野:
     - 当初はAndroid開発が主な用途
-    - 現在ではサーバーサイドからフロントエンドまで全てKotlinで開発することも可能
+    - 現在ではサーバーサイドからフロントエンドまで全てKotlinで開発できる
 
 ---
 
 # Java対応
 
 - 当初はJava6でもラムダ式や関数型言語的なプログラミングができるのがメリットだった
-- Javaのバージョンアップによってこれらの要素がJavaに取り込まれメリットが薄れてきた
+- Javaのバージョンアップによってこれらの要素がJavaに取り込まれメリットは薄れてきた
 - Kotlin自体もJava8以降のバイトコードに対応できるようになって行った
 
 ---
@@ -86,7 +86,7 @@ https://kotlinlang.org/
 
 # 契約(Contracts)
 
-- スマートキャストの結果を改善するための宣言
+- スマートキャストの判定を改善するための宣言
 - 関数が呼び出された後の状態を制約してスマートキャストが効くようにする
 - 参考文献: https://speakerdeck.com/ntaro/kotlin-contracts-number-m3kt
 
@@ -98,3 +98,7 @@ https://kotlinlang.org/
 - Dmitry Jemerov/Svetlana Isakova "Kotlin in Action" 2017 (訳書あり)
 - 長澤太郎「Kotlin Webアプリケーション」2017
 - Pierre-Yves Saumont "Joy of Kotlin" 2019
+
+![Taro's Books](https://raw.githubusercontent.com/eyasuyuki/KotlinUpdates/master/images/books1.jpg)
+
+![Manning](https://raw.githubusercontent.com/eyasuyuki/KotlinUpdates/master/images/books2.jpg)
