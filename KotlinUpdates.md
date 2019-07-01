@@ -120,8 +120,14 @@ https://kotlinlang.org/
 
 # コルーチン
 
-- async/await
-- yield
+- async
+    - Deferred<T>を返すコルーチンビルダー関数
+- await
+    - Deferred<T>のメソッド
+- yield, yieldAll
+    - サスペンド関数 その時点で中断して値を返す
+- Channel
+    - コルーチン間で値を送受信できるキュー (like Golang)
 
 ---
 
