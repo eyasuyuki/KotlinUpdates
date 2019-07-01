@@ -1,7 +1,7 @@
-Kotlin Updates
+Kotlin Updates in LL2019
 ===
 
-2019-08-24 @eyasuyuki
+2019-08-24 [@eyasuyuki](https://twitter.com/eyasuyuki)
 
 ---
 
@@ -11,12 +11,14 @@ https://kotlinlang.org/
 
 ![Kotlin Website](https://raw.githubusercontent.com/eyasuyuki/KotlinUpdates/master/images/kotlinlang_org.png)
 
+---
+
 # Kotlinとは(2/2)
 
 - JetBrainsが開発したコンパイラ言語
     - JVMバイトコード
     - JavaScriptへのトランスパイル
-    - 機械語
+    - LLVM中間表現
 - Null安全
 - 関数型言語からの影響
 	- ラムダ式
@@ -69,10 +71,24 @@ https://kotlinlang.org/
 
 # JavaScript対応
 
+- とりあえずKotlinからJavaScriptにトランスパイルはできる
+- TypeScriptやDartと比べて便利かというと...🤔
+- Kotlin/NativeでWebAssemblyにコンパイルする方が有望...?
+- 参考文献: https://speakerdeck.com/subroh0508/jstoge-dou-sinagarakotlinfalseiketeruwen-fa-woxue-bu
+
 ---
 
 # Kotlin/Native
 
+- KotlinからLLVM中間表現へコンパイル
+    - Linux
+    - Windows
+    - Android NDK
+    - iOS
+    - macOS
+    - WebAssembly
+- 当然ながらJavaのライブラリは使えない
+- iOSアプリがKotlinで書ける
 - 参考文献: https://www.slideshare.net/TakakiHoshikawa/kotlinnative
 
 ---
@@ -95,8 +111,8 @@ https://kotlinlang.org/
 # Kotlinの書籍
 
 - 長澤太郎「Kotlinスタートブック」2016 (通称赤べこ本)
-- Dmitry Jemerov/Svetlana Isakova "Kotlin in Action" 2017 (訳書あり)
 - 長澤太郎「Kotlin Webアプリケーション」2017
+- Dmitry Jemerov/Svetlana Isakova "Kotlin in Action" 2017 (訳書あり)
 - Pierre-Yves Saumont "Joy of Kotlin" 2019
 
 ![Taro's Books](https://raw.githubusercontent.com/eyasuyuki/KotlinUpdates/master/images/books1.jpg)
