@@ -5,7 +5,7 @@ Kotlin Updates in LL2019
 
 ---
 
-# Kotlinとは(1/2)
+# Kotlinとは(1/3)
 
 https://kotlinlang.org/
 
@@ -13,13 +13,21 @@ https://kotlinlang.org/
 
 ---
 
-# Kotlinとは(2/2)
+# Kotlinとは(2/3)
 
 - JetBrainsが開発したコンパイラ言語
     - JVMバイトコード
     - JavaScriptへのトランスパイル
     - LLVM中間表現
 - Null安全
+- スマートキャスト
+- データクラス (ボイラープレートからの解放)
+- 高速なコンパイル (Scalaに対する優位性)
+
+---
+
+# Kotlinとは(2/3)
+
 - 関数型言語からの影響
 	- ラムダ式
 	- 高階関数
@@ -29,9 +37,6 @@ https://kotlinlang.org/
 	- 型推論
 	- ifなどが構文ではなく式(値を返す)
 	- 中値記法
-- スマートキャスト
-- データクラス (ボイラープレートからの解放)
-- 高速なコンパイル (Scalaに対する優位性)
 
 ---
 
@@ -41,7 +46,26 @@ https://kotlinlang.org/
 
 ---
 
-# 1.0から1.3までの大きなトピック
+# 1.0から1.3までの大きなトピック(1/3)
+
+|年月|バージョン|主なトピック|
+|----|----------|------------|
+|2016年2月|1.0|Javaとの完全互換<br>Java6バイトコードへのコンパイル|
+|2017年5月||Androidの開発言語として正式採用|
+|2017年3月|1.1|JavaScript対応<br>コルーチン(実験的) async/await,yield<br>Java9サポート<br>コンパイル速度の向上|
+
+---
+
+# 1.0から1.3までの大きなトピック(2/3)
+
+|年月|バージョン|主なトピック|
+|----|----------|------------|
+|2017年11月|1.2|マルチプラットフォームプロジェクト|
+|2018年11月|1.3|コルーチン<br>Kotlin/Native<br>契約(Contracts)|
+
+---
+
+# 1.0から1.3までの大きなトピック(3/3)
 
 - マルチプラットフォーム対応
 - コルーチン
@@ -63,9 +87,10 @@ https://kotlinlang.org/
 
 # Java対応
 
-- 当初はJava6でもラムダ式や関数型言語的なプログラミングができるのがメリットだった
-- Javaのバージョンアップによってこれらの要素がJavaに取り込まれメリットは薄れてきた
-- Kotlin自体もJava8以降のバイトコードに対応できるようになって行った
+- 当初のメリット:
+    - Java6でもラムダ式や関数型言語的なプログラミングができる
+- Java8以降が広く使われるようになり当初のメリットは薄れた
+- Kotlin自体もJava8以降のバイトコードに対応できるようになた
 
 ---
 
@@ -108,13 +133,18 @@ https://kotlinlang.org/
 
 ---
 
-# Kotlinの書籍
+# Kotlinの書籍(1/2)
 
 - 長澤太郎「Kotlinスタートブック」2016 (通称赤べこ本)
 - 長澤太郎「Kotlin Webアプリケーション」2017
-- Dmitry Jemerov/Svetlana Isakova "Kotlin in Action" 2017 (訳書あり)
-- Pierre-Yves Saumont "Joy of Kotlin" 2019
 
 ![Taro's Books](https://raw.githubusercontent.com/eyasuyuki/KotlinUpdates/master/images/books1.jpg)
+
+---
+
+# Kotlinの書籍(2/2)
+
+- Dmitry Jemerov/Svetlana Isakova "Kotlin in Action" 2017 (訳書あり)
+- Pierre-Yves Saumont "Joy of Kotlin" 2019
 
 ![Manning](https://raw.githubusercontent.com/eyasuyuki/KotlinUpdates/master/images/books2.jpg)
