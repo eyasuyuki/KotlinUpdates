@@ -8,3 +8,5 @@
  */
 
 rootProject.name = "KotlinUpdates"
+
+rootProject.buildFileName = "build.gradle.kts"
