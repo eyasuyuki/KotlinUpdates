@@ -44,7 +44,6 @@ fun main(args: Array<String>) {
     // end runBlocking
 
     println("start async")
-
     GlobalScope.async {
         // ノンブロッキングで実行されるため実行前にmain()が終わる
         println("Inside async")
