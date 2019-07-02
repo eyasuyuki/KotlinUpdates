@@ -144,14 +144,7 @@ https://kotlinlang.org/
 
 # async(1/2)
 
-```aidl
-println("start async")
-GlobalScope.async {
-    // ノンブロッキングで実行されるため実行前にmain()が終わる
-    println("Inside async")
-}
-println("end async")
-```
+![async1](https://raw.githubusercontent.com/eyasuyuki/KotlinUpdates/master/images/async1.png)
 
 実行結果:
 ```aidl
