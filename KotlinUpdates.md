@@ -134,11 +134,114 @@ https://kotlinlang.org/
 - ```async```
     - ```Deferred<T>```を返すコルーチンビルダー関数
 - ```await```
-    - ```Deferred<T>```のメソッド
+    - ```Deferred<T>```のサスペンド関数
 - ```yield```, ```yieldAll```
-    - サスペンド関数 その時点で中断して値を返す
+    - サスペンド関数。その時点で中断して値を返す
 - Channel
     - コルーチン間で値を送受信できるキュー (like Golang)
+
+---
+
+# async(1/2)
+
+```aidl
+println("start async")
+GlobalScope.async {
+    // ノンブロッキングで実行されるため実行前にmain()が終わる
+    println("Inside async")
+}
+println("end async")
+```
+
+実行結果:
+```aidl
+start async
+end async
+```
+
+---
+
+# async(2/2)
+```aidl
+println("start async")
+GlobalScope.async {
+    println("Inside async")
+}
+Thread.sleep(1000) // これがないとasync実行前にmain()が終わる
+println("end async")
+```
+
+実行結果:
+```aidl
+start async
+Inside async
+end async
+```
+
+---
+
+# await(1/2)
+
+```aidl
+val defferd = GlobalScope.async {
+    println(App().greeting)
+}
+defferd.await()
+```
+
+コンパイルエラー:
+```aidl
+e: /Users/yasuyuki/git/KotlinUpdates/src/main/kotlin/org/javaopen/kotlin/updates/App.kt: (22, 17): Suspend function 'await' should be called only from a coroutine or another suspend function
+```
+
+---
+
+# await (2/2)
+
+```aidl
+println("start runBlocking")
+runBlocking {
+    val defferd = GlobalScope.async {
+        println(App().greeting)
+    }
+    defferd.await()
+}
+println("end runBlocking")
+```
+
+実行結果:
+```aidl
+start runBlocking
+Hello world.
+end runBlocking
+```
+
+---
+
+# asyncな関数
+
+```aidl
+fun hello() = GlobalScope.async {
+    "Hello, async."
+}
+```
+
+使い方:
+```aidl
+println("start async function")
+runBlocking {
+    println(hello().await())
+}
+println("end async function")
+```
+
+実行結果
+```aidl
+start async function
+Hello, async.
+end async function
+```
+
 
 ---
 
@@ -165,3 +268,11 @@ https://kotlinlang.org/
 - Pierre-Yves Saumont "Joy of Kotlin" 2019
 
 ![Manning](https://raw.githubusercontent.com/eyasuyuki/KotlinUpdates/master/images/books2.jpg)
+
+---
+
+# このスライドのソースとサンプルコード
+
+https://github.com/eyasuyuki/KotlinUpdates
+
+
