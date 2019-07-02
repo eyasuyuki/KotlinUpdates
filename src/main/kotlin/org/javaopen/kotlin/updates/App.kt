@@ -12,11 +12,26 @@ class App {
         }
 }
 
+fun hello() = GlobalScope.async {
+    "Hello, async."
+}
+
 fun main(args: Array<String>) {
+
+    println("start async function")
+    runBlocking {
+        println(hello().await())
+    }
+    println("end async function")
+
+    // 実行結果:
+    // start async function
+    // Hello, async.
+    // end async function
 
     println("start runBlocking")
     runBlocking {
-        val defferd = async {
+        val defferd = GlobalScope.async {
             println(App().greeting)
         }
         defferd.await()
@@ -34,7 +49,7 @@ fun main(args: Array<String>) {
         // ノンブロッキングで実行されるため実行前にmain()が終わる
         println("Inside async")
     }
-    //Thread.sleep(1000) // Thread.sleep()がないとasyncは実行されない
+    //Thread.sleep(1000) // これがないとasync実行前にmain()が終わる
     println("end async")
 
     // 実行結果:
