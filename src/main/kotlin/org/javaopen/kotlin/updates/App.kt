@@ -16,9 +16,10 @@ fun main(args: Array<String>) {
 
     println("start runBlocking")
     runBlocking {
-        async {
+        val defferd = async {
             println(App().greeting)
         }
+        defferd.await()
     }
     println("end runBlocking")
 
