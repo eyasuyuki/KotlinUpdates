@@ -3,6 +3,8 @@
  */
 package org.javaopen.kotlin.updates
 
+import kotlinx.coroutines.*
+
 class App {
     val greeting: String
         get() {
@@ -11,5 +13,30 @@ class App {
 }
 
 fun main(args: Array<String>) {
-    println(App().greeting)
+
+    println("start runBlocking")
+    runBlocking {
+        async {
+            println(App().greeting)
+        }
+    }
+    println("end runBlocking")
+
+    // 実行結果:
+    // tart runBlocking
+    // Hello world.
+    // end runBlocking
+
+    println("start async")
+
+    GlobalScope.async {
+        // ノンブロッキングで実行されるため実行前にmain()が終わる
+        println("Inside async")
+    }
+    //Thread.sleep(1000) // Thread.sleep()がないとasyncは実行されない
+    println("end async")
+
+    // 実行結果:
+    // start async
+    // end async
 }
