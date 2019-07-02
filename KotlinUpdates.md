@@ -155,14 +155,7 @@ end async
 ---
 
 # async(2/2)
-```aidl
-println("start async")
-GlobalScope.async {
-    println("Inside async")
-}
-Thread.sleep(1000) // これがないとasync実行前にmain()が終わる
-println("end async")
-```
+![async2](https://raw.githubusercontent.com/eyasuyuki/KotlinUpdates/master/images/async2.png)
 
 実行結果:
 ```aidl
@@ -175,32 +168,16 @@ end async
 
 # await(1/2)
 
-```aidl
-val defferd = GlobalScope.async {
-    println(App().greeting)
-}
-defferd.await()
-```
+![await1](https://raw.githubusercontent.com/eyasuyuki/KotlinUpdates/master/images/await1.png)
 
 コンパイルエラー:
-```aidl
-e: /Users/yasuyuki/git/KotlinUpdates/src/main/kotlin/org/javaopen/kotlin/updates/App.kt: (22, 17): Suspend function 'await' should be called only from a coroutine or another suspend function
-```
+![compile_error](https://raw.githubusercontent.com/eyasuyuki/KotlinUpdates/master/images/compile_error.png)
 
 ---
 
 # await (2/2)
 
-```aidl
-println("start runBlocking")
-runBlocking {
-    val defferd = GlobalScope.async {
-        println(App().greeting)
-    }
-    defferd.await()
-}
-println("end runBlocking")
-```
+![await2](https://raw.githubusercontent.com/eyasuyuki/KotlinUpdates/master/images/await2.png)
 
 実行結果:
 ```aidl
@@ -211,22 +188,16 @@ end runBlocking
 
 ---
 
-# asyncな関数
+# asyncな関数(1/2)
 
-```aidl
-fun hello() = GlobalScope.async {
-    "Hello, async."
-}
-```
+![async_fun1](https://raw.githubusercontent.com/eyasuyuki/KotlinUpdates/master/images/async_fun1.png)
+
+---
+
+# asyncな関数(2/2)
 
 使い方:
-```aidl
-println("start async function")
-runBlocking {
-    println(hello().await())
-}
-println("end async function")
-```
+![async_fun2](https://raw.githubusercontent.com/eyasuyuki/KotlinUpdates/master/images/async_fun2.png)
 
 実行結果
 ```aidl
