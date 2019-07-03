@@ -26,7 +26,7 @@ https://kotlinlang.org/
 
 ---
 
-# Kotlinとは(2/3)
+# Kotlinとは(3/3)
 
 - 関数型言語からの影響
 	- ラムダ式
@@ -206,14 +206,30 @@ Hello, async.
 end async function
 ```
 
-
 ---
 
 # 契約(Contracts)
 
 - スマートキャストの判定を改善するための宣言
 - 関数が呼び出された後の状態を制約してスマートキャストが効くようにする
-- 参考文献: https://speakerdeck.com/ntaro/kotlin-contracts-number-m3kt
+
+---
+
+# スマートじゃないキャスト(Java)
+
+![dumb](https://raw.githubusercontent.com/eyasuyuki/KotlinUpdates/master/images/dumb.png)
+
+---
+
+# スマートキャスト
+
+![smart](https://raw.githubusercontent.com/eyasuyuki/KotlinUpdates/master/images/smart.png)
+
+---
+
+# 契約(Contracts)の参考文献
+
+https://speakerdeck.com/ntaro/kotlin-contracts-number-m3kt
 
 ---
 
