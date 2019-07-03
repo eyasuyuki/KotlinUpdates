@@ -16,9 +16,9 @@ https://kotlinlang.org/
 # Kotlinとは(2/3)
 
 - JetBrainsが開発したコンパイラ言語
-    - JVMバイトコード
+    - JVMバイトコードへのコンパイル
     - JavaScriptへのトランスパイル
-    - LLVM中間表現
+    - LLVM中間表現へのコンパイル
 - Null安全
 - スマートキャスト
 - データクラス (ボイラープレートからの解放)
@@ -227,9 +227,11 @@ end async function
 
 ---
 
-# 契約(Contracts)の参考文献
+# 契約(Contracts)のおさらい
 
-https://speakerdeck.com/ntaro/kotlin-contracts-number-m3kt
+- スマートキャストの判定を改善するための宣言
+- 関数が呼び出された後の状態を制約してスマートキャストが効くようにする
+- 参考文献: https://speakerdeck.com/ntaro/kotlin-contracts-number-m3kt
 
 ---
 
