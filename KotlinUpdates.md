@@ -3,6 +3,8 @@ Kotlin Updates in LL2019
 
 2019-08-24 [@eyasuyuki](https://twitter.com/eyasuyuki)
 
+<!-- paginate: true -->
+
 ---
 
 # Kotlinとは(1/3)
