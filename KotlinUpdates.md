@@ -126,17 +126,22 @@ https://kotlinlang.org/
     - macOS
     - WebAssembly
 - 当然ながらJavaのライブラリは使えない
-- iOSアプリがKotlinで書ける
+	- Kotlinで記述した標準ライブラリの整備が進んでいる
+- メリット: iOSアプリがKotlinで書ける
 - 参考文献: https://www.slideshare.net/TakakiHoshikawa/kotlinnative
 
 ---
 
 # コルーチン
 
+- Kotlinのコルーチンはノンブロッキングで実行される関数
+- 関数の途中で処理を中断したり再開したりできる
 - ```async```
-    - ```Deferred<T>```を返すコルーチンビルダー関数
+  - ```Deferred<T>```を返すコルーチンビルダー関数
+  - コルーチンビルダー関数の中はノンブロッキングで実行される
 - ```await```
     - ```Deferred<T>```のサスペンド関数
+	- サスペンド関数はコルーチンの実行を中断する
 - ```yield```, ```yieldAll```
     - サスペンド関数。その時点で中断して値を返す
 - Channel
