@@ -1,3 +1,9 @@
+# Install marp-cli
+
+```
+npm install --save-dev @marp-team/marp-cli
+```
+
 # Convert Markdown to HTML slide
 
 ```
