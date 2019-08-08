@@ -42,6 +42,13 @@ https://kotlinlang.org/
 
 ---
 
+# KotlinのTutorial
+
+- Kotlin Koans https://play.kotlinlang.org/koans/overview (Koan=禅の公案)
+![Kotlin Koans](https://raw.githubusercontent.com/eyasuyuki/KotlinUpdates/master/images/koans.png)
+
+---
+
 # Kotlin躍進のきっかけ
 
 - 2017年のGoogle I/OでAndroidの開発言語として正式に採用された
