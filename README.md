@@ -4,10 +4,16 @@
 npm install --save-dev @marp-team/marp-cli
 ```
 
-# Convert Markdown to HTML slide
+# Convert Markdown to HTML slide or PDF
 
 ```
 npx @marp-team/marp-cli KotlinUpdates.md
+```
+
+or
+
+```
+npx @marp-team/marp-cli KotlinUpdates.md KotlinUpdates.pdf
 ```
 
 # Execute example code
