@@ -47,7 +47,7 @@ https://kotlinlang.org/
 - Kotlin Koans https://play.kotlinlang.org/koans/overview
 - Koan=禅の公案
 
-![width:400px](https://raw.githubusercontent.com/eyasuyuki/KotlinUpdates/master/images/koans.png)
+![width:500px](https://raw.githubusercontent.com/eyasuyuki/KotlinUpdates/master/images/koans.png)
 
 ---
 
