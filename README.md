@@ -13,7 +13,7 @@ npx @marp-team/marp-cli KotlinUpdates.md
 or
 
 ```
-npx @marp-team/marp-cli KotlinUpdates.md KotlinUpdates.pdf
+npx @marp-team/marp-cli KotlinUpdates.md -o KotlinUpdates.pdf
 ```
 
 # Execute example code
