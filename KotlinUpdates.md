@@ -11,7 +11,7 @@ Kotlin Updates in LL2019
 
 https://kotlinlang.org/
 
-![Kotlin Website](https://raw.githubusercontent.com/eyasuyuki/KotlinUpdates/master/images/kotlinlang_org.png)
+![width:500px](https://raw.githubusercontent.com/eyasuyuki/KotlinUpdates/master/images/kotlinlang_org.png)
 
 ---
 
@@ -44,8 +44,10 @@ https://kotlinlang.org/
 
 # KotlinのTutorial
 
-Kotlin Koans https://play.kotlinlang.org/koans/overview (Koan=禅の公案)
-![Kotlin Koans](https://raw.githubusercontent.com/eyasuyuki/KotlinUpdates/master/images/koans.png)
+- Kotlin Koans https://play.kotlinlang.org/koans/overview
+- Koan=禅の公案
+
+![width:400px](https://raw.githubusercontent.com/eyasuyuki/KotlinUpdates/master/images/koans.png)
 
 ---
 
@@ -254,7 +256,7 @@ end async function
 - 長澤太郎「Kotlinスタートブック」2016 (通称赤べこ本)
 - 長澤太郎「Kotlin Webアプリケーション」2017
 
-![Taro's Books](https://raw.githubusercontent.com/eyasuyuki/KotlinUpdates/master/images/books1.jpg)
+![width:500px](https://raw.githubusercontent.com/eyasuyuki/KotlinUpdates/master/images/books1.jpg)
 
 ---
 
@@ -263,7 +265,7 @@ end async function
 - Dmitry Jemerov/Svetlana Isakova "Kotlin in Action" 2017 (訳書あり)
 - Pierre-Yves Saumont "Joy of Kotlin" 2019
 
-![Manning](https://raw.githubusercontent.com/eyasuyuki/KotlinUpdates/master/images/books2.jpg)
+![width:500px](https://raw.githubusercontent.com/eyasuyuki/KotlinUpdates/master/images/books2.jpg)
 
 ---
 
