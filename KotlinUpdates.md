@@ -1,6 +1,5 @@
 Kotlin Updates in LL2019
 ===
-
 2019-08-24 [@eyasuyuki](https://twitter.com/eyasuyuki)
 
 <!-- paginate: true -->
@@ -86,11 +85,16 @@ https://kotlinlang.org/
 
 ---
 
-# マルチプラットフォーム対応
+# マルチプラットフォーム対応(1/2)
 
 - 当初はJavaとの完全互換が大きなメリットだった
     - JavaとKotlinが混在しても動作するので部分的に移行することも可能
 - 次いでJavaScriptへの対応が行われ、フロントエンドもKotlinで開発出来るようになった
+
+---
+
+# マルチプラットフォーム対応(2/2)
+
 - Kotlin/Nativeのリリースでネイティブコンパイルが可能になりJavaに依存しない道が開かれた
 - 適用分野:
     - 当初はAndroid開発が主な用途
@@ -125,7 +129,7 @@ https://kotlinlang.org/
 
 ---
 
-# Kotlin/Native
+# Kotlin/Native(1/2)
 
 - KotlinからLLVM中間表現へコンパイル
     - Linux
@@ -134,6 +138,10 @@ https://kotlinlang.org/
     - iOS
     - macOS
     - WebAssembly
+---
+
+# Kotlin/Native(2/2)
+
 - 当然ながらJavaのライブラリは使えない
 	- Kotlinで記述した標準ライブラリの整備が進んでいる
 - メリット: iOSアプリがKotlinで書ける
@@ -141,7 +149,7 @@ https://kotlinlang.org/
 
 ---
 
-# コルーチン
+# コルーチン(1/2)
 
 - Kotlinのコルーチンはノンブロッキングで実行される関数
 - 関数の途中で処理を中断したり再開したりできる
@@ -151,6 +159,10 @@ https://kotlinlang.org/
 - ```await```
     - ```Deferred<T>```のサスペンド関数
 	- サスペンド関数はコルーチンの実行を中断する
+---
+
+# コルーチン(2/2)
+
 - ```yield```, ```yieldAll```
     - サスペンド関数。その時点で中断して値を返す
 - Channel
@@ -187,13 +199,13 @@ end async
 ![await1](https://raw.githubusercontent.com/eyasuyuki/KotlinUpdates/master/images/await1.png)
 
 コンパイルエラー:
-![compile_error](https://raw.githubusercontent.com/eyasuyuki/KotlinUpdates/master/images/compile_error.png)
+![width:800px](https://raw.githubusercontent.com/eyasuyuki/KotlinUpdates/master/images/compile_error.png)
 
 ---
 
 # await (2/2)
 
-![await2](https://raw.githubusercontent.com/eyasuyuki/KotlinUpdates/master/images/await2.png)
+![width:400px](https://raw.githubusercontent.com/eyasuyuki/KotlinUpdates/master/images/await2.png)
 
 実行結果:
 ```aidl
@@ -239,7 +251,7 @@ end async function
 
 # スマートキャスト
 
-![smart](https://raw.githubusercontent.com/eyasuyuki/KotlinUpdates/master/images/smart.png)
+![width:900px](https://raw.githubusercontent.com/eyasuyuki/KotlinUpdates/master/images/smart.png)
 
 ---
 

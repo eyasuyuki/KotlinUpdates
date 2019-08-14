@@ -7,13 +7,13 @@ npm install --save-dev @marp-team/marp-cli
 # Convert Markdown to HTML slide or PDF
 
 ```
-npx @marp-team/marp-cli KotlinUpdates.md
+npx @marp-team/marp-cli -theme gaia KotlinUpdates.md
 ```
 
 or
 
 ```
-npx @marp-team/marp-cli KotlinUpdates.md -o KotlinUpdates.pdf
+npx @marp-team/marp-cli -theme gaia KotlinUpdates.md -o KotlinUpdates.pdf
 ```
 
 # Execute example code
