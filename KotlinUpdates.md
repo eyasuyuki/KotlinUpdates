@@ -205,7 +205,7 @@ end async
 
 # await (2/2)
 
-![width:400px](https://raw.githubusercontent.com/eyasuyuki/KotlinUpdates/master/images/await2.png)
+![width:450px](https://raw.githubusercontent.com/eyasuyuki/KotlinUpdates/master/images/await2.png)
 
 実行結果:
 ```aidl
