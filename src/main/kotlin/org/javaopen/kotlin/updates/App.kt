@@ -14,7 +14,7 @@ class App {
 
 fun hello() = GlobalScope.async {
     "Hello, async."
-}
+} // Defferd<String>を返す
 
 fun main(args: Array<String>) {
 
