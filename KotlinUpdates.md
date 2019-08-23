@@ -255,6 +255,22 @@ end async function
 
 ---
 
+# Kotlin 1.3 で可能になった書き方
+
+![](https://raw.githubusercontent.com/eyasuyuki/KotlinUpdates/master/images/smartGreeting.png)
+
+- ```String#isNullOrBlank```が```false```なら```null```でないことごが保証されるので```capitalize()```が呼べる
+- 参考文献: https://speakerdeck.com/ntaro/kotlin-contracts-number-m3kt
+
+---
+
+# Kotlin 1.2 以前の書き方
+
+![](https://raw.githubusercontent.com/eyasuyuki/KotlinUpdates/master/images/nonSmartGreeting.png)
+
+- ```name != null```を書く必要がある
+- 参考文献: https://speakerdeck.com/ntaro/kotlin-contracts-number-m3kt
+
 # 契約(Contracts)のおさらい
 
 - スマートキャストの判定を改善するための宣言
